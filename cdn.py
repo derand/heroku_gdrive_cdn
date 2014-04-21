@@ -9,7 +9,7 @@ __copyright__ = 'Copyright © 2014'
 
 import os
 from functools import wraps
-from flask import Flask, Response, json, request, stream_with_context, redirect
+from flask import Flask, Response, json, request, stream_with_context, redirect, render_template
 from pymongo import MongoClient
 import urllib2
 
@@ -48,7 +48,9 @@ def requires_auth(f):
 
 @app.route('/')
 def index():
-	return request.url_root
+	val = {}
+	return render_template('index.html', **val)
+	#return request.url_root
 
 @app.route('/auth')
 @requires_auth

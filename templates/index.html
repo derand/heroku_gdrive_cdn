@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>CDN</title>
+{#    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+#}  </head>
+  <body>
+    <div class="container">
+      <form method="post" action="/upload" enctype="multipart/form-data">
+        <p><b>1. Step:</b> Browse to the image.<br/>
+          <input type="file" name="file" size="32"/>
+        </p>
+        <p><b>2. Step:</b> Click on &quot;Upload&quot;.<br/>
+          <input name="s" type="submit" value="Upload" />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
