@@ -28,7 +28,7 @@ We assume you're familiar with Git and have it installed.
   1. Visit code.google.com/apis/console and create new project.
   2. On API section turn on 'Drive API' and 'Drive SDK'
   3. On 'Credentials' section create new client ID (web application)
-  4. 'Redirect URI' should be <URL of your live app>/auth
+  4. 'Redirect URI' should be `<URL of your live app>/auth`
   5. Download JSON and put this file to directory of this example (rename this file to 'secrets.json')
 
 ## Set up MongoDB
@@ -38,9 +38,9 @@ We assume you're familiar with Git and have it installed.
   3. Select the 'Free' plan on Amazon EC2, pick a database name, username and password.
   4. Click on your new database and note the connection URL. It should look something like this:
 
-       mongodb://<user>:<password>@ds029807.mongolab.com:29807/<databaseName>
+        mongodb://<user>:<password>@ds029807.mongolab.com:29807/<databaseName>
 
-  5. Copy this URL to 'MONGO_CONNECTION_STRING' variable in drive.py file
+  5. Copy this URL to `MONGO_CONNECTION_STRING` variable in drive.py file
 
 
 ## Build and Deploy your app
@@ -51,8 +51,8 @@ We assume you're familiar with Git and have it installed.
         $ git commit -m "Initial commit"
         $ git push heroku master
 
-  2. Auth you Google Drive account on <your live Heroku URL>/auth
+  2. Auth you Google Drive account on `<your live Heroku URL>/auth`
 
 ## Check your app
 
-You can upload file to <your live Heroku URL>/upload, in responce server return live file URL.
+You can upload file to `<your live Heroku URL>/upload`, in responce server return live file URL.
