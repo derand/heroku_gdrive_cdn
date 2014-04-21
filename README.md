@@ -47,9 +47,9 @@ We assume you're familiar with Git and have it installed.
 
   1. Run the following git commands:
 
-      $ git add .
-      $ git commit -m "Initial commit"
-      $ git push heroku master
+        $ git add .
+        $ git commit -m "Initial commit"
+        $ git push heroku master
 
   2. Auth you Google Drive account on <your live Heroku URL>/auth
 
