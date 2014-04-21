@@ -28,6 +28,7 @@ from pymongo import MongoClient
 #     }
 #   }
 CLIENTSECRETS_LOCATION = 'secrets.json'
+MONGO_CONNECTION_STRING = '<YOU MONGO CONNECTION STRING>'
 SCOPES = [
 		'https://www.googleapis.com/auth/drive',
 		'https://www.googleapis.com/auth/userinfo.email',
@@ -63,7 +64,7 @@ class GoogleDriveUploader(object):
 		self._db = db
 		self._credentials = None
 		self._drive_service = None
-		self._mongo_connection = 'mongodb://E5MTEzYW:ZDM4M2Q3M2IwZGQ1MzQ@ds047197.mongolab.com:47197/cdn'
+		self._mongo_connection = MONGO_CONNECTION_STRING
 		self.gdrive_redirect_uri = gdrive_redirect_uri
 
 	def getDB(self):
